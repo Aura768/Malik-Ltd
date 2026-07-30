@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  freellmapi:
+    image: ghcr.io/tashfeenahmed/freellmapi:latest
+    container_name: freellmapi
+    ports:
+      - "3001:3001"
+    environment:
+      - ENCRYPTION_KEY=${FREELLMAPI_ENCRYPTION_KEY}
+      - PORT=3001
+    volumes:
+      - freellmapi_data:/app/server/data
+    restart: unless-stopped
+    networks:
+      - malik_network
+
+networks:
+  malik_network:
+    driver: bridge
+
+volumes:
+  freellmapi_data:

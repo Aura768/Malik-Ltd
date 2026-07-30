@@ -1,0 +1,5 @@
+  ✔  OpenCode already running (port :4100, pid:5816) — adopted
+
+  [1m[36m⚡[0m [1mBota Platform[0m  [4mhttp://localhost:359[0m  http://192.168.100.14:359
+
+  [32m✔[0m Ready on port 359
